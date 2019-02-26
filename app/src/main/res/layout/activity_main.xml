@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_start_stop"
+            android:textOn="stop unity"
+            android:textOff="start unity"
+            android:layout_margin="10dp"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_pause_resume"
+            android:textOn="resume unity"
+            android:textOff="pause unity"
+            android:visibility="gone"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <com.mc.unitylib.UnityView
+        android:id="@+id/custom_unity_view"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="250dp">
+    </com.mc.unitylib.UnityView>
+
+</FrameLayout>
